@@ -1,4 +1,4 @@
-package com.lti.controller;
+package com.lti.appl.controller;
 
 public class StudentController {
 

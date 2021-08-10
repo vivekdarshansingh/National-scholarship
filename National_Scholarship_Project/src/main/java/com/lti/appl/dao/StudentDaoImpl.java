@@ -1,4 +1,4 @@
-package com.lti.dao;
+package com.lti.appl.dao;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import javax.persistence.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.lti.entity.StudentReg;
+import com.lti.appl.beans.StudentReg;
 
 @Repository("StudentDao")
 public class StudentDaoImpl implements StudentDao{
@@ -19,7 +19,7 @@ public class StudentDaoImpl implements StudentDao{
 	
 	@Override
 	@Transactional
-	public void newStudentReg(StudentReg a) {
+	public void saveStudentReg(StudentReg a) {
 		
 		System.out.println("Dao Layer...");
 		em.persist(a);

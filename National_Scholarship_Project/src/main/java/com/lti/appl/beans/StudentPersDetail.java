@@ -1,4 +1,4 @@
-package com.lti.entity;
+package com.lti.appl.beans;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
