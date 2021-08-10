@@ -44,7 +44,7 @@ public class StudentReg {
 	private long studBankAcc;
 	
 	@Column(name="STUD_BANK_IFSC")
-	private long IFSC;
+	private long ifsc;
 	
 	@Column(name="STUD_INST_CODE")
 	private int studInstCode;
@@ -72,7 +72,7 @@ public class StudentReg {
 		this.studSOD = studSOD;
 		this.studDistrict = studDistrict;
 		this.studBankAcc = studBankAcc;
-		IFSC = iFSC;
+		ifsc = ifsc;
 		this.studInstCode = studInstCode;
 		this.studInstStatus = studInstStatus;
 	}
@@ -199,14 +199,14 @@ public class StudentReg {
 
 
 
-	public long getIFSC() {
-		return IFSC;
+	public long getifsc() {
+		return ifsc;
 	}
 
 
 
-	public void setIFSC(long iFSC) {
-		IFSC = iFSC;
+	public void setIFSC(long ifsc) {
+		ifsc = ifsc;
 	}
 
 
@@ -239,8 +239,8 @@ public class StudentReg {
 	public String toString() {
 		return "StudentReg [studId=" + studId + ", studName=" + studName + ", studDOB=" + studDOB + ", studGender="
 				+ studGender + ", studMobNo=" + studMobNo + ", studEmailId=" + studEmailId + ", studPWD=" + studPWD
-				+ ", studSOD=" + studSOD + ", studDistrict=" + studDistrict + ", studBankAcc=" + studBankAcc + ", IFSC="
-				+ IFSC + ", studInstCode=" + studInstCode + ", studInstStatus=" + studInstStatus + "]";
+				+ ", studSOD=" + studSOD + ", studDistrict=" + studDistrict + ", studBankAcc=" + studBankAcc + ", ifsc="
+				+ ifsc + ", studInstCode=" + studInstCode + ", studInstStatus=" + studInstStatus + "]";
 	}
 	
 	
