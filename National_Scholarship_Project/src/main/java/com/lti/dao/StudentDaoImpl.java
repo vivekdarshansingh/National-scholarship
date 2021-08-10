@@ -9,20 +9,20 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.lti.entity.StudentReg;
 
-public class StudentDaoImpl {
+@Repository("StudentDao")
+public class StudentDaoImpl implements StudentDao{
 	
 	@PersistenceContext
-	private EntityManager entityManager;
+	private EntityManager em;
 	
-	
+	@Override
 	@Transactional
-	public Long readLogin(String studentEmail, String studentPassword) {
-//		Query q = entityManager.createQuery(
-//				"Select count(s) from STUDENT_REG s where s.STUD_EMAIL_ID = :studentEmail and s.STUD_PWD=:password");
-//		q.setParameter("studentEmail", studentEmail);
-//		q.setParameter("password", studentPassword);
-//		Long count = (Long) q.getSingleResult();
-		return null;
+	public void newStudentReg(StudentReg a) {
+		
+		System.out.println("Dao Layer...");
+		em.persist(a);
+	}
+	
 	}
 	
 	
@@ -31,4 +31,4 @@ public class StudentDaoImpl {
 	
 	
 
-}
+

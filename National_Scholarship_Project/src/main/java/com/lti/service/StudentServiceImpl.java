@@ -2,21 +2,27 @@ package com.lti.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.lti.dao.StudentDaoImpl;
+import com.lti.dao.StudentDao;
 import com.lti.entity.StudentReg;
 
-public class StudentServiceImpl {
+public class StudentServiceImpl implements StudentService {
 	
 	  
 		@Autowired
-		private StudentDaoImpl studentdao;
+		private StudentDao studentdao;
+
+		public StudentDao getStudentdao() {
+			return studentdao;
+		}
+
+		public void setStudentdao(StudentDao studentdao) {
+			this.studentdao = studentdao;
+		}
 		
-		public void register(StudentReg studentReg) {
-			studentReg.setStudId(studentReg.getStudId());
+		@Override
+		public void newStudentReg(StudentReg a) {
 			
-			
-	
-			
+			studentdao.newStudentReg(a);
 		}
 
 	}
