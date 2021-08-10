@@ -1,5 +1,7 @@
 package com.lti.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -21,7 +23,10 @@ public class StudentDaoImpl implements StudentDao{
 		
 		System.out.println("Dao Layer...");
 		em.persist(a);
+			
 	}
+	
+	
 	
 	}
 	
