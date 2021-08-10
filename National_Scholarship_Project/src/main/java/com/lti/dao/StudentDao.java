@@ -14,6 +14,7 @@ public class StudentDao {
 	@PersistenceContext
 	private EntityManager entityManager;
 	
+	
 	@Transactional
 	public Long readLogin(String studentEmail, String studentPassword) {
 //		Query q = entityManager.createQuery(

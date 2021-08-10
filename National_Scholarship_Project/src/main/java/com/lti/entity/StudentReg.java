@@ -18,6 +18,7 @@ public class StudentReg {
 	@Column(name="STUD_NAME")
 	private String studName;
 	
+	
 	@Column(name="STUD_DOB")
 	private LocalDate studDOB;
 	

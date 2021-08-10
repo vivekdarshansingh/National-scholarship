@@ -15,7 +15,7 @@ public class StudentService {
 			studentReg.setStudId(studentReg.getStudId());
 			
 			
-			
+	
 			
 		}
 

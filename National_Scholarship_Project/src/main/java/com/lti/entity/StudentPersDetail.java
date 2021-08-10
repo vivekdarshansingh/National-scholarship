@@ -19,6 +19,7 @@ public class StudentPersDetail {
 	@Column(name="STUD_RELIGION")
 	private String religion;
 	
+	
 	@Column(name="STUD_COMMUNITY")
 	private String community;
 	
