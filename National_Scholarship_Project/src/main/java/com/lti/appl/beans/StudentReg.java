@@ -20,20 +20,20 @@ public class StudentReg {
 	
 	
 	@Column(name="STUD_DOB")
-	private LocalDate studDOB;
+	private String studDOB;
 	
 	@Column(name="STUD_GENDER")
 	private String studGender;
 	
 	@Column(name="STUD_MOB_NO")
-	private long studMobNo;
+	private String studMobNo;
 	
 	@Column(name="STUD_EMAIL_ID")
 	private String studEmailId;
 	
 	@Column(name="STUD_PWD")
-	private long studPWD;
-	
+	private String studPWD;
+
 	@Column(name="STUD_STATE_OF_DOMICILE")
 	private String studSOD;
 	
@@ -41,25 +41,23 @@ public class StudentReg {
 	private String studDistrict;
 	
 	@Column(name="STUD_BANK_ACC_NO")
-	private long studBankAcc;
+	private String studBankAcc;
 	
 	@Column(name="STUD_BANK_IFSC")
-	private long ifsc;
+	private String ifsc;
 	
 	@Column(name="STUD_INST_CODE")
 	private int studInstCode;
 	
 	@Column(name="STUD_INST_STATUS")
 	private int studInstStatus;
-	
+
 	public StudentReg() {
 		super();
 	}
 
-
-
-	public StudentReg(int studId, String studName, LocalDate studDOB, String studGender, long studMobNo,
-			String studEmailId, long studPWD, String studSOD, String studDistrict, long studBankAcc, long iFSC,
+	public StudentReg(int studId, String studName, String studDOB, String studGender, String studMobNo,
+			String studEmailId, String studPWD, String studSOD, String studDistrict, String studBankAcc, String ifsc,
 			int studInstCode, int studInstStatus) {
 		super();
 		this.studId = studId;
@@ -72,168 +70,114 @@ public class StudentReg {
 		this.studSOD = studSOD;
 		this.studDistrict = studDistrict;
 		this.studBankAcc = studBankAcc;
-		ifsc = ifsc;
+		this.ifsc = ifsc;
 		this.studInstCode = studInstCode;
 		this.studInstStatus = studInstStatus;
 	}
-
-
 
 	public int getStudId() {
 		return studId;
 	}
 
-
-
 	public void setStudId(int studId) {
 		this.studId = studId;
 	}
-
-
 
 	public String getStudName() {
 		return studName;
 	}
 
-
-
 	public void setStudName(String studName) {
 		this.studName = studName;
 	}
 
-
-
-	public LocalDate getStudDOB() {
+	public String getStudDOB() {
 		return studDOB;
 	}
 
-
-
-	public void setStudDOB(LocalDate studDOB) {
+	public void setStudDOB(String studDOB) {
 		this.studDOB = studDOB;
 	}
-
-
 
 	public String getStudGender() {
 		return studGender;
 	}
 
-
-
 	public void setStudGender(String studGender) {
 		this.studGender = studGender;
 	}
 
-
-
-	public long getStudMobNo() {
+	public String getStudMobNo() {
 		return studMobNo;
 	}
 
-
-
-	public void setStudMobNo(long studMobNo) {
+	public void setStudMobNo(String studMobNo) {
 		this.studMobNo = studMobNo;
 	}
-
-
 
 	public String getStudEmailId() {
 		return studEmailId;
 	}
 
-
-
 	public void setStudEmailId(String studEmailId) {
 		this.studEmailId = studEmailId;
 	}
 
-
-
-	public long getStudPWD() {
+	public String getStudPWD() {
 		return studPWD;
 	}
 
-
-
-	public void setStudPWD(long studPWD) {
+	public void setStudPWD(String studPWD) {
 		this.studPWD = studPWD;
 	}
-
-
 
 	public String getStudSOD() {
 		return studSOD;
 	}
 
-
-
 	public void setStudSOD(String studSOD) {
 		this.studSOD = studSOD;
 	}
-
-
 
 	public String getStudDistrict() {
 		return studDistrict;
 	}
 
-
-
 	public void setStudDistrict(String studDistrict) {
 		this.studDistrict = studDistrict;
 	}
 
-
-
-	public long getStudBankAcc() {
+	public String getStudBankAcc() {
 		return studBankAcc;
 	}
 
-
-
-	public void setStudBankAcc(long studBankAcc) {
+	public void setStudBankAcc(String studBankAcc) {
 		this.studBankAcc = studBankAcc;
 	}
 
-
-
-	public long getifsc() {
+	public String getIfsc() {
 		return ifsc;
 	}
 
-
-
-	public void setIFSC(long ifsc) {
-		ifsc = ifsc;
+	public void setIfsc(String ifsc) {
+		this.ifsc = ifsc;
 	}
-
-
 
 	public int getStudInstCode() {
 		return studInstCode;
 	}
 
-
-
 	public void setStudInstCode(int studInstCode) {
 		this.studInstCode = studInstCode;
 	}
-
-
 
 	public int getStudInstStatus() {
 		return studInstStatus;
 	}
 
-
-
 	public void setStudInstStatus(int studInstStatus) {
 		this.studInstStatus = studInstStatus;
 	}
-
-
 
 	@Override
 	public String toString() {
@@ -242,7 +186,6 @@ public class StudentReg {
 				+ ", studSOD=" + studSOD + ", studDistrict=" + studDistrict + ", studBankAcc=" + studBankAcc + ", ifsc="
 				+ ifsc + ", studInstCode=" + studInstCode + ", studInstStatus=" + studInstStatus + "]";
 	}
-	
 	
 	
 	

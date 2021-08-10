@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.lti.appl.beans.StudentReg;
 import com.lti.appl.dao.StudentDao;
 
-@Service
+@Service("studentService")
 public class StudentServiceImpl implements StudentService {
 	
 	  
